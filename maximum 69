@@ -1,0 +1,7 @@
+class Solution {
+    public int maximum69Number (int num) {
+        String digits = String.valueOf(num);
+        digits=digits.replaceFirst("6","9");
+        return Integer.parseInt(digits);
+    }
+}
