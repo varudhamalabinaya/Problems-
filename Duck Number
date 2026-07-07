@@ -1,0 +1,25 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String nstr=sc.next();
+        if(nstr.charAt(0)=='0'){
+            System.out.print("No Duck");
+            return ;
+        }
+        boolean haszero=true;
+        boolean hasone=true;
+        for(int i=0;i<nstr.length();i++){
+            if(nstr.charAt(i)=='1'){
+                hasone=false;
+            }
+            if(nstr.charAt(i)=='0'){
+                haszero=false;
+            }
+        }
+        if(haszero==false){
+            System.out.print("Duck");
+        }
+    }
+    
+}
